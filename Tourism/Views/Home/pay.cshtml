@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Payment Checkout
+        </title>
+        <link rel="stylesheet" href="~/css/pay.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous"/>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="payment">
+                <div class="payment-logo">
+                    <p> P </p>
+                </div>
+                <h2> Online payment through Credit/Debit Card </h2>
+                <div class="form">
+                    <div class="card space icon-relative">
+                        <label class="label"> Card Holder Name : </label>
+                        <input type="text" class="input" name="card_holder_name" placeholder="Enter Card Holder Name">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="card space icon-relative">
+                        <label class="label"> Card Number : </label>
+                        <input type="text" class="input" name="card_number" placeholder="Enter Card Number" data-mask="0000 0000 0000 0000">
+                        <i class="far fa-credit-card"></i>
+                    </div>
+                    <div class="card-group space">
+                        <div class="card-item icon-relative"> 
+                            <label class="label"> Expiry Date : </label>
+                            <input type="text" class="input" name="expiry_date" placeholder="00 / 00" data-mask="00 / 00">
+                            <i class="fas fa-calendar-day"></i>
+                        </div>
+                        <div class="card_item icon-relative">
+                            <label class="label"> CVC : </label>
+                            <input type="password" class="input" name="cvc" placeholder="3 digits CVC" data-mask="000">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <a href="otp"> Pay </a>
+                    </div>
+                    <div class="button">
+                        <a href="#"> Cancel </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" crossorigin="anonymous"></script>
+    </body>
+</html>

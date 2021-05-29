@@ -1,0 +1,594 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Travel_Tour</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <style>
+        .secondDiv {
+            background-color: white;
+            height: 100px;
+        }
+
+        .s2 {
+            background-color: white;
+            padding-top: 1px;
+            padding-left: 20px;
+            padding-right: 22px;
+        }
+
+        .s3 {
+            padding-top: 10px;
+            background-color: white;
+            height: 100px;
+            color: black;
+            text-align: center;
+            font-size: 40px;
+            font-family: 'Allura', cursive;
+        }
+
+        .img2 {
+            padding-right: 10px;
+            padding-left: 10px;
+            border-radius: 40px;
+        }
+
+        .options1 {
+            background-color: transparent;
+            border-radius: 10px;
+            border: 3px solid black;
+            position: absolute;
+            left: 369px;
+            width: 10%;
+            height: 45px;
+            box-shadow: 0px 2px 4px 0px #757575;
+            cursor: pointer;
+        }
+
+        .options2 {
+            background-color: transparent;
+            border-radius: 10px;
+            border: 3px solid black;
+            position: absolute;
+            left: 445px;
+            width: 10%;
+            height: 45px;
+            box-shadow: 0px 2px 4px 0px #757575;
+            cursor: pointer;
+        }
+
+
+        .options3 {
+            background-color: transparent;
+            border-radius: 10px;
+            border: 3px solid black;
+            position: absolute;
+            left: 710px;
+            width: 10%;
+            height: 45px;
+            box-shadow: 0px 2px 4px 0px #757575;
+            cursor: pointer;
+        }
+
+        .options4 {
+            background-color: transparent;
+            border-radius: 10px;
+            border: 3px solid black;
+            position: absolute;
+            height: 45px;
+            left: 885px;
+            width: 10%;
+            box-shadow: 0px 2px 4px 0px #757575;
+            cursor: pointer;
+        }
+
+        .options5 {
+            background-color: transparent;
+            border-radius: 10px;
+            border: 3px solid black;
+            position: absolute;
+            left: 1060px;
+            width: 10%;
+            height: 45px;
+            box-shadow: 0px 2px 4px 0px #757575;
+            cursor: pointer;
+        }
+
+        .options6 {
+            background-color: transparent;
+            border-radius: 10px;
+            border: 3px solid black;
+            position: absolute;
+            left: 1140px;
+            width: 10%;
+            height: 45px;
+            box-shadow: 0px 2px 4px 0px #757575;
+            cursor: pointer;
+        }
+
+        .options7 {
+            background-color: transparent;
+            border-radius: 10px;
+            border: 3px solid black;
+            position: absolute;
+            left: 1210px;
+            width: 10%;
+            height: 45px;
+            box-shadow: 0px 2px 4px 0px #757575;
+            cursor: pointer;
+        }
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 20;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 0px;
+            border-radius: 20px;
+        }
+
+            .options1:hover,
+            .options2:hover,
+            .options3:hover,
+            .options4:hover,
+            .options5:hover,
+            .options6:hover,
+            .options7:hover {
+                background-color: black;
+                color: white;
+                box-shadow: 0px 2px 4px 0px #757575;
+                cursor: pointer;
+            }
+
+
+        .secondSearch {
+            position: absolute;
+            top: 110px;
+            right: 350px;
+            width: 50%;
+            border-radius: 20px;
+            text-align: center;
+            height: 50px;
+        }
+
+            .secondSearch::-webkit-input-placeholder {
+                font-size: 15px;
+                font-family: FontAwesome;
+                font-weight: normal;
+                overflow: visible;
+                vertical-align: top;
+                display: inline-block !important;
+                padding-left: 5px;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                color: black;
+            }
+
+            .secondSearch::-moz-placeholder {
+                font-size: 15px;
+                font-family: FontAwesome;
+                font-weight: normal;
+                font-size: 10px;
+                overflow: visible;
+                vertical-align: top;
+                display: inline-block !important;
+                padding-left: 5px;
+                padding-top: 2px;
+                color: black;
+            }
+
+            .secondSearch:-ms-input-placeholder {
+                font-weight: normal;
+                font-family: FontAwesome;
+                font-weight: normal;
+                overflow: visible;
+                vertical-align: top;
+                display: inline-block !important;
+                padding-left: 5px;
+                padding-top: 2px;
+                color: black;
+            }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(0,0,0,0.8);
+            }
+
+
+
+        .pageIcon {
+            top: 2px;
+            position: relative;
+            left: 20px;
+        }
+
+        .imageBell {
+            position: absolute;
+            top: 25px;
+            right: 55px;
+        }
+
+        .imageUser {
+            position: absolute;
+            top: 25px;
+            right: 16px;
+        }
+
+        .imageContact {
+            position: absolute;
+            top: 27px;
+            right: 96px;
+        }
+
+        .dropbtn {
+            background-color: transparent;
+            border-radius: 10px;
+            border: 3px solid black;
+            position: absolute;
+            left: 333px; /*325*/
+            top: -23px;
+            width: 150px;
+            height: 45px;
+            box-shadow: 0px 2px 4px 0px #757575;
+            cursor: pointer;
+        }
+
+
+        .dropdown-content {
+            display: none;
+            min-width: 160px;
+            z-index: 1;
+            background-color: rgba(255,255,255,0.7);
+            border-radius: 5px;
+            position: absolute;
+            width: 100%;
+            box-shadow: 0px 2px 4px 0px #757575;
+            cursor: pointer;
+            left: 325px;
+            top: 20px;
+            height: 400px;
+            overflow: auto;
+            overflow-y: scroll;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                width: 100%;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: black;
+                    color: white;
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: black;
+            color: white
+        }
+
+        #footer1,
+        #footer0 {
+            background-color: lightgray;
+            color: black;
+        }
+
+        #footer2 {
+            background-color: darkgray;
+            color: black;
+        }
+
+        .footerlinks {
+            color: black;
+            text-decoration-line: none;
+            cursor: pointer;
+        }
+
+            .footerlinks:hover {
+                color: black;
+                text-decoration-line: underline;
+                cursor: pointer;
+            }
+
+        th, td {
+            padding-right: 50px;
+            padding-left: 67px;
+        }
+
+        .link {
+            color: black;
+            text-decoration: none;
+        }
+
+            .link:hover {
+                color: black;
+                text-decoration-line: underline;
+                cursor: pointer;
+            }
+
+        .my-class:link, .my-class:visited {
+            color: black;
+            text-decoration-line: none;
+        }
+
+        .my-class:hover {
+            color: white;
+        }
+
+        .secndClass:link, .secndClass:visited {
+            color: black;
+            text-decoration-line: none;
+        }
+
+        .secndClass:hover {
+            color: black;
+            text-decoration-line: underline;
+        }
+        .nav-item {
+            margin-right:5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Travel and Tourism</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <partial name="_LoginPartial" />
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><i class="fa fa-home" style="font-size:20px"></i>Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-globe" style="font-size:20px"></i>Destination
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <div style="overflow:auto; height:400px;">
+                                    <a href="/Home/AndhraPradesh" class="dropdown-item">Andhra Pradesh</a>
+                                    <a href="/Home/AndamanAndNicobarIslands" class="dropdown-item">Andaman and Nicobar Islands</a>
+                                    <a href="/Home/ArunachalPradesh" class="dropdown-item">Arunachal Pradesh</a>
+                                    <a href="/Home/Assam" class="dropdown-item">Assam</a>
+                                    <a href="/Home/Bihar" class="dropdown-item">Bihar</a>
+                                    <a href="/Home/Chandigarh" class="dropdown-item">Chandigarh</a>
+                                    <a href="/Home/Chhattisgarh" class="dropdown-item">Chhattisgarh</a>
+                                    <a href="/Home/DadraAndNagarHaveliAndDamanAndDiu" class="dropdown-item">Daman & Diu</a>
+                                    <a href="/Home/Delhi" class="dropdown-item">Delhi</a>
+                                    <a href="/Home/Goa" class="dropdown-item">Goa</a>
+                                    <a href="/Home/Gujarat" class="dropdown-item">Gujarat</a>
+                                    <a href="/Home/Harayana" class="dropdown-item">Harayana</a>
+                                    <a href="/Home/HimachalPradesh" class="dropdown-item">Himachal Pradesh</a>
+                                    <a href="/Home/JammuAndKashmir" class="dropdown-item">Jammu & Kashmir</a>
+                                    <a href="/Home/Jharkhand" class="dropdown-item">Jharkhand</a>
+                                    <a href="/Home/Karnataka" class="dropdown-item">Karnataka</a>
+                                    <a href="/Home/Kerala" class="dropdown-item">Kerala</a>
+                                    <a href="/Home/Ladakh" class="dropdown-item">Ladakh</a>
+                                    <a href="/Home/Lakshwadeep" class="dropdown-item">Lakshadweep</a>
+                                    <a href="/Home/MadhyaPradesh" class="dropdown-item">Madhya Pradesh</a>
+                                    <a href="/Home/Maharashtra" class="dropdown-item">Maharashtra</a>
+                                    <a href="/Home/Manipur" class="dropdown-item">Manipur</a>
+                                    <a href="/Home/Meghalaya" class="dropdown-item">Meghalaya</a>
+                                    <a href="/Home/Mizoram" class="dropdown-item">Mizoram</a>
+                                    <a href="/Home/Nagaland" class="dropdown-item">Nagaland</a>
+                                    <a href="/Home/Odisha" class="dropdown-item">Odisha</a>
+                                    <a href="/Home/Puducherry" class="dropdown-item">Puducherry</a>
+                                    <a href="/Home/Punjab" class="dropdown-item">Punjab</a>
+                                    <a href="/Home/Rajasthan" class="dropdown-item">Rajasthan</a>
+                                    <a href="/Home/Sikkim" class="dropdown-item">Sikkim</a>
+                                    <a href="/Home/TamilNadu" class="dropdown-item">Tamil Nadu</a>
+                                    <a href="/Home/Telangana" class="dropdown-item">Telangana</a>
+                                    <a href="/Home/Uttarakhand" class="dropdown-item">Uttarakhand</a>
+                                    <a href="/Home/UttarPradesh" class="dropdown-item">Uttar Pradesh</a>
+                                    <a href="/Home/WestBengal" class="dropdown-item">West Bengal</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Gallery"><i class="fa fa-image" style="font-size:20px"></i>Gallery</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Journey"><i class="fa fa-snowflake-o" style="font-size:20px"></i>Journey Type</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Hotel"><i class="fa fa-money" style="font-size:20px"></i>Book Now</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ContactUs"><i class="fa fa-phone" style="font-size:20px"></i>Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="~/Image/Layout/Circle-icons-arrow-up.svg.png" height="35" width="35" /></button>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <div id="footer0" class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                    <table>
+                        <tr>
+                            <th><br />ABOUT</th>
+                            <th><br />COMMUNITY</th>
+                            <th><br />HOST</th>
+                            <th><br />SUPPORT</th>
+                            <th><br />CONDITIONS & RULES</th>
+
+                        </tr>
+                        <tr>
+                            <td><br /><a class="link">How Wanderlust works</a></td>
+                            <td><br /><a class="link">Diversity & Belonging</a></td>
+                            <td><br /><a class="link">Host your home</a></td>
+                            <td><br /><a class="link">Our COVID-19 Response</a></td>
+                            <td><br /><a class="link" href="/Home/TermsConditions">Terms and Conditions</a></td>
+
+                        </tr>
+                        <tr>
+                            <td><br /><a class="link">Newsroom</a></td>
+                            <td><br /><a class="link">Accessibility</a></td>
+                            <td><br /><a class="link">Host an Online Experience</a></td>
+                            <td><br /><a class="link">Help Centre</a></td>
+                            <td><br /><a class="link" href="/Home/PrivacyPolicy">Privacy Policy</a></td>
+                        </tr>
+                        <tr>
+                            <td><br /><a class="link">Investors</a></td>
+                            <td><br /><a class="link">Frontline Stays</a></td>
+                            <td><br /><a class="link">Responsible hosting</a></td>
+                            <td><br /><a class="link">Cancellation options</a></td>
+                            <td><br /><a class="link" href="/Home/CookieConsent">Cookie Consent</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <br /><a class="link">Wanderlust for Work</a>
+                            </td>
+                            <td><br /><a class="link">Guest Referrals</a></td>
+                            <td>
+                                <br /><a class="link">Community Centre</a>
+                            </td>
+                            <td><br /><a class="link">Neighbourhood Support</a></td>
+                            <td><br /><a class="link">Blog</a></td>
+
+                        </tr>
+
+                        <tr>
+                            <td><br /><a class="link">Founders' Letter</a></td>
+                            <td>
+                                <br /><a class="link">Wanderlust.org</a>
+                            </td>
+                            <td><br /><a class="link">Resource Centre</a></td>
+                            <td><br /><a class="link">Trust & Safety </a></td>
+                            <td><br /><a class="link">FAQ</a></td>
+
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="footer1" class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                    <p>
+                        <hr />
+                        <asp:LinkButton class="footerlinks" ID="LinkButton5" runat="server">
+                            <img src="~/Image/Layout/circle-cropped%20(1).png" height="30" width="30" />
+                        </asp:LinkButton>
+                        &nbsp;
+                        <asp:LinkButton class="footerlinks" ID="LinkButton6" runat="server">
+                            <img src="~/Image/Layout/circle-cropped%20(2).png" height="30" width="30" />
+                        </asp:LinkButton>
+                        &nbsp;
+
+                        <asp:LinkButton class="footerlinks" ID="LinkButton7" runat="server">
+                            <img src="~/Image/Layout/768px-Instagram_icon.png" height="30" width="30" />
+                        </asp:LinkButton>
+                        &nbsp;
+
+                        <asp:LinkButton class="footerlinks" ID="LinkButton8" runat="server">
+                            <img src="~/Image/Layout/youtube.png" height="30" width="35" />
+                        </asp:LinkButton>
+                        <br /><br />
+
+                        <pre>Call Us On <asp:LinkButton class="footerlinks" ID="LinkButton10" runat="server"><img src="~/Image/Layout/circle-cropped%20(3).png" height="20" width="20" /></asp:LinkButton> <asp:LinkButton class="footerlinks" ID="LinkButton11" runat="server">+91-900-123-4567</asp:LinkButton></pre>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="footer2" class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+
+                    <p style="color:black">
+                        &copy Copyright 2021. All right reserved. <a class="footerlinks" href="#"
+                                                                     target="_blank">Wanderlust</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            }
+            else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

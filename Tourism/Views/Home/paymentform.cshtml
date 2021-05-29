@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Book Hotel </title>
+    <link rel="stylesheet" href="~/css/payment.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <form class="form-group">
+            <div id="form">
+                <h1 class="text-white text-center"> Booking Available!! </h1>
+                <div id="first-group">
+                    <div id="content">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="Name">
+                    </div>
+                    <div id="content">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" id="input-group" placeholder="Email address">
+                    </div>
+                    <div id="content">
+                        <i class="fa fa-phone"></i>
+                        <input type="text" id="input-group" placeholder="Phone number">
+                    </div>
+                    <div id="content">
+                        <i class="fa fa-users"></i>
+                        <input type="number" id="input-group" placeholder="No. of Person" min="1" max="10">
+                    </div>
+                </div>
+                <div id="second-group">
+                    <div id="content">
+                        <i class="fa fa-bed"></i>
+                        <input type="number" id="input-group" placeholder="No. of Rooms" max="10">
+                    </div>
+                    <div id="content">
+                        <i class="fa fa-calendar"></i>
+                        <input type="number" id="input-group" placeholder="No. of Days">
+                    </div>
+                    <div id="content">
+                        <i class="fa fa-bed"></i>
+                        <select id="input-group" style="background-color: black;">
+                            <option value=""> Type of Room </option>
+                            <option value=""> Single Bedded </option>
+                            <option value=""> Double Bedded </option>
+                            <option value=""> Luxury Room </option>
+                        </select>
+                    </div>
+                    <div id="content">
+                        <i class="fa fa-money"></i>
+                        <input type="number" id="input-group" placeholder="Total Amount">
+                    </div>
+                </div>
+                <button type="submit" value="Submit" id="submit-btn" onclick="/Home/pay"><a href="pay"> Book Now! </a></button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

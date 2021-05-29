@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Authentication via OTP </title>
+    
+    <link rel="stylesheet" href="~/css/otp.css">
+
+</head>
+    <body>
+        <div class="container">
+            <h1> Enter OTP sent to your registered mobile number: </h1>
+            <div class="userInput">
+                <input type="text" id="first" maxlength="1" onkeyup="clickInput(this,'second')">
+                <input type="text" id="second" maxlength="1" onkeyup="clickInput(this,'third')">
+                <input type="text" id="third" maxlength="1" onkeyup="clickInput(this,'fourth')">
+                <input type="text" id="fourth" maxlength="1">
+            </div>
+            <button><a href="thanks">Confirm</a></button>
+            <button><a href="pay">Cancel</a></button>
+            <script>
+                function clickInput(first,last){
+                    if(first.value.length){
+                        document.getElementById(last).focus();
+                    }
+                }
+            </script>
+        </div>
+    </body>
+</html>

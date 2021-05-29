@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link href="~/css/contact.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+    function reset() {
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("phone_nom").value = "";
+        document.getElementById("subject").value = "";
+        document.getElementById("message").value = "";
+    }
+</script>
+<!--BODY PART -->
+<form id="form1" runat="server" action="mailto:pratyushachakravarty249@gmail.com, kaushiki@emailaddress, anjali@emailaddress, shekhar@emailaddress" method="post" enctype="text/plain">
+ 
+    <div>
+        <div class="container">
+            <div class="contact-parent">
+                <div class="contact-child child1">
+                    <p>
+                        <i class="fas fa-map-marker-alt">
+                        </i> Address <br />
+                        <span>
+                            Cognizant Technology Solutions, Technocomplex , Saltlake <br />
+                            Kolkata, West Bengal, India
+                        </span>
+                    </p>
+
+                    <p>
+                        <i class="fas fa-phone-alt">
+                            Our Contact Number <br />
+                            <span>
+                                +91-9876543210 <br />
+                                +91-8765432109
+                            </span>
+                        </i>
+                    </p>
+
+                    <p>
+                        <i class="far fa-envelope">
+                            Our Email Address <br />
+                            <span>
+                                abc@Cognizant.com <br />
+                                xyz@Cognizant.com
+                            </span>
+                        </i>
+                    </p>
+                </div>
+                <div class="contact-child child2">
+                    <div class="inside-contact">
+                        <h2> Contact Us </h2>
+                        <h3>
+                            <asp:Label ID="confirm" runat="server" Text=""> </asp:Label>
+                        </h3>
+                        <p> Name <span style="color:red;">*</span> </p>
+                        <input type="text" ID="name" runat="server" required />
+                        <p> Email <span style="color:red;">*</span></p>
+                        <input type="email" ID="email" runat="server" required />
+                        <p> Phone Number <span style="color:red;">*</span></p>
+                        <input type="text" ID="phone_no" runat="server" pattern="[7-9]{1}[0-9]{9}" required />
+                        <p> Subject <span style="color:red;">*</span></p>
+                        <input type="text" ID="subject" runat="server" required />
+                        <p> Message <span style="color:red;">*</span></p> 
+                        <textarea name="msg" id="message" rows="4" runat="server" required> </textarea> <br />
+                        <button id="send_btn" runat="server"> SEND </button>
+                        <span> <button id="reset_btn" runat="server" onclick="return reset()"> RESET </button> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</form>
