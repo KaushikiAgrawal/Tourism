@@ -225,3 +225,4 @@ D:\New_Travel_Tourism\Tour\Tourism\Tourism\obj\Debug\netcoreapp3.1\Razor\Views\H
 D:\New_Travel_Tourism\Tour\Tourism\Tourism\obj\Debug\netcoreapp3.1\Razor\Views\Home\WestBengal.cshtml.g.cs
 D:\New_Travel_Tourism\Tour\Tourism\Tourism\obj\Debug\netcoreapp3.1\Razor\Views\Home\Harayana.cshtml.g.cs
 D:\New_Travel_Tourism\Tour\Tourism\Tourism\obj\Debug\netcoreapp3.1\Razor\Views\Home\Kerala.cshtml.g.cs
+D:\New_Travel_Tourism\Tour\Tourism\Tourism\obj\Debug\netcoreapp3.1\Razor\Views\Home\Abstract.cshtml.g.cs
