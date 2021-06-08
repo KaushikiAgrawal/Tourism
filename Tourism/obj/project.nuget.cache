@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lThucgMprCh9oyP6leYQll0CIuPMTzcEVRKOMQRoXbJTDWpMEKh5FFLqUAr5cO3qLsLKFCx2zxrLd/418NUplg==",
+  "dgSpecHash": "6yGx4qi4Lmt3duhCNvQxbTI0JDhXvaic8vHqycLtz+7AuL58QdSk3CCIGXQjaRKjJKTsSFnT9R7hnZ2JOTYxjQ==",
   "success": true,
   "projectFilePath": "D:\\New_Travel_Tourism\\Tour\\Tourism\\Tourism\\Tourism.csproj",
   "expectedPackageFiles": [
@@ -15,7 +15,7 @@
     "C:\\Users\\Kaushiki\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\Kaushiki\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",
     "C:\\Users\\Kaushiki\\.nuget\\packages\\microsoft.aspnetcore.razor.runtime\\2.2.0\\microsoft.aspnetcore.razor.runtime.2.2.0.nupkg.sha512",
-    "C:\\Users\\Kaushiki\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "C:\\Users\\Kaushiki\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\Kaushiki\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "C:\\Users\\Kaushiki\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\2.9.4\\microsoft.codeanalysis.analyzers.2.9.4.nupkg.sha512",
     "C:\\Users\\Kaushiki\\.nuget\\packages\\microsoft.codeanalysis.common\\3.3.1\\microsoft.codeanalysis.common.3.3.1.nupkg.sha512",

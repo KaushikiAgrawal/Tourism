@@ -16,8 +16,6 @@ D:\New_Travel_Tourism\Tour\Tourism\Tourism\bin\Debug\netcoreapp3.1\Microsoft.Asp
 D:\New_Travel_Tourism\Tour\Tourism\Tourism\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
 D:\New_Travel_Tourism\Tour\Tourism\Tourism\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
 D:\New_Travel_Tourism\Tour\Tourism\Tourism\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
-D:\New_Travel_Tourism\Tour\Tourism\Tourism\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
-D:\New_Travel_Tourism\Tour\Tourism\Tourism\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 D:\New_Travel_Tourism\Tour\Tourism\Tourism\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 D:\New_Travel_Tourism\Tour\Tourism\Tourism\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 D:\New_Travel_Tourism\Tour\Tourism\Tourism\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -26,9 +24,6 @@ D:\New_Travel_Tourism\Tour\Tourism\Tourism\bin\Debug\netcoreapp3.1\Microsoft.Ent
 D:\New_Travel_Tourism\Tour\Tourism\Tourism\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
 D:\New_Travel_Tourism\Tour\Tourism\Tourism\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
 D:\New_Travel_Tourism\Tour\Tourism\Tourism\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
-D:\New_Travel_Tourism\Tour\Tourism\Tourism\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
-D:\New_Travel_Tourism\Tour\Tourism\Tourism\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-D:\New_Travel_Tourism\Tour\Tourism\Tourism\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
 D:\New_Travel_Tourism\Tour\Tourism\Tourism\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
 D:\New_Travel_Tourism\Tour\Tourism\Tourism\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\New_Travel_Tourism\Tour\Tourism\Tourism\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
@@ -226,3 +221,13 @@ D:\New_Travel_Tourism\Tour\Tourism\Tourism\obj\Debug\netcoreapp3.1\Razor\Views\H
 D:\New_Travel_Tourism\Tour\Tourism\Tourism\obj\Debug\netcoreapp3.1\Razor\Views\Home\Harayana.cshtml.g.cs
 D:\New_Travel_Tourism\Tour\Tourism\Tourism\obj\Debug\netcoreapp3.1\Razor\Views\Home\Kerala.cshtml.g.cs
 D:\New_Travel_Tourism\Tour\Tourism\Tourism\obj\Debug\netcoreapp3.1\Razor\Views\Home\Abstract.cshtml.g.cs
+D:\New_Travel_Tourism\Tour\Tourism\Tourism\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\New_Travel_Tourism\Tour\Tourism\Tourism\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\New_Travel_Tourism\Tour\Tourism\Tourism\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\New_Travel_Tourism\Tour\Tourism\Tourism\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\New_Travel_Tourism\Tour\Tourism\Tourism\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\New_Travel_Tourism\Tour\Tourism\Tourism\obj\Debug\netcoreapp3.1\Razor\Views\HotelChecks\Create.cshtml.g.cs
+D:\New_Travel_Tourism\Tour\Tourism\Tourism\obj\Debug\netcoreapp3.1\Razor\Views\HotelChecks\Delete.cshtml.g.cs
+D:\New_Travel_Tourism\Tour\Tourism\Tourism\obj\Debug\netcoreapp3.1\Razor\Views\HotelChecks\Details.cshtml.g.cs
+D:\New_Travel_Tourism\Tour\Tourism\Tourism\obj\Debug\netcoreapp3.1\Razor\Views\HotelChecks\Edit.cshtml.g.cs
+D:\New_Travel_Tourism\Tour\Tourism\Tourism\obj\Debug\netcoreapp3.1\Razor\Views\HotelChecks\Index.cshtml.g.cs
