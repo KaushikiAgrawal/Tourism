@@ -5,9 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Book Hotel </title>
-    <link rel="stylesheet" href="~/css/payment.css">
+    <link rel="stylesheet" href="payment.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+            function calculate_Amount() {
+            var type = document.getElementById("choice").value;
+
+            if(type == 'Single Bedded') {
+                var k = 2000;
+                var m = document.getElementById("room").value;
+                var n = document.getElementById("days").value;
+                document.getElementById("totalAmount") =  k*m*n;
+            }
+            else if(type == 'Double Bedded') {
+                var k = 5000;
+                var m = document.getElementById("room").value;
+                var n = document.getElementById("days").value;
+                document.getElementById("totalAmount") =  k*m*n;
+            }
+            else if(type == 'Luxury Room') {
+                var k = 8000;
+                var m = document.getElementById("room").value;
+                var n = document.getElementById("days").value;
+                document.getElementById("totalAmount") =  k*m*n;
+            }
+        }
+    </script>
 
 </head>
 
@@ -15,7 +39,7 @@
     <div class="container">
         <form class="form-group">
             <div id="form">
-                <h1 class="text-white text-center"> Booking Available!! </h1>
+                <h1 class="text-white text-center"> Booking Available Now!! </h1>
                 <div id="first-group">
                     <div id="content">
                         <i class="fa fa-user" aria-hidden="true"></i>
@@ -37,15 +61,15 @@
                 <div id="second-group">
                     <div id="content">
                         <i class="fa fa-bed"></i>
-                        <input type="number" id="input-group" placeholder="No. of Rooms" max="10">
+                        <input type="number" id="input-group" id="room" placeholder="No. of Rooms" max="10">
                     </div>
                     <div id="content">
                         <i class="fa fa-calendar"></i>
-                        <input type="number" id="input-group" placeholder="No. of Days">
+                        <input type="number" id="input-group" id="days" placeholder="No. of Days">
                     </div>
                     <div id="content">
                         <i class="fa fa-bed"></i>
-                        <select id="input-group" style="background-color: black;">
+                        <select id="input-group" style="background-color: black;" id="choice">
                             <option value=""> Type of Room </option>
                             <option value=""> Single Bedded </option>
                             <option value=""> Double Bedded </option>
@@ -54,11 +78,13 @@
                     </div>
                     <div id="content">
                         <i class="fa fa-money"></i>
-                        <input type="number" id="input-group" placeholder="Total Amount">
+                        <span style="color:white;"> Amount : <output name="totalAmount" id="totalAmount"></output></span>
                     </div>
                 </div>
-                <button type="submit" value="Submit" id="submit-btn" onclick="/Home/pay"><a href="pay"> Book Now! </a></button>
+                <input type="submit" value="Calculate" id="calculate-btn" onclick = "return calculate_Amount()" style="color:blue;"> Calculate! 
+                <button type="submit" value="Submit" id="submit-btn"><a href="pay.cshtml"> Book Now! </a></button>
             </div>
+            
         </form>
     </div>
 </body>
